@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>guns.lol — ma page</title>
+<meta name="description" content="Ma page link-in-bio guns.lol : liens, avatar, musique, vues.">
+<link rel="stylesheet" href="css/guns.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23a855f7' d='M12 2 3 12l9 10 9-10z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="pbg" id="pbg"></div>
+<div class="fx" id="fx"></div>
+
+<header class="navwrap">
+  <div class="navpill">
+    <a class="brand" href="home.html"><span id="logo"></span> guns.lol</a>
+    <nav class="navlinks" id="navlinks">
+      <a href="home.html">Accueil</a>
+      <a href="leaderboard.html">Classement</a>
+      <a href="pricing.html">Tarifs</a>
+      <a href="compare.html">Comparer</a>
+      <a href="dashboard.html">Tableau de bord</a>
+      <a class="btn btn--primary btn--sm" href="login.html">Inscription gratuite</a>
+    </nav>
+    <button class="iconbtn nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="ppage">
+  <section class="pcard" id="pcard">
+    <div class="pavatar" id="pAvatar"></div>
+    <div class="pname" id="pName">…</div>
+    <div class="pbadges" id="pBadges"></div>
+    <div class="pbio" id="pBio"></div>
+    <div class="pmeta" id="pMeta"></div>
+    <div class="psocials" id="pSocials"></div>
+    <div class="plinks" id="pLinks"></div>
+    <div class="paudiowrap hidden" id="pAudioWrap">
+      <div class="paudio">
+        <button class="paudio__btn" id="pAudioBtn">▶</button>
+        <div class="paudio__info">
+          <div class="paudio__name" id="pAudioName">—</div>
+          <div class="paudio__bar" id="pAudioBar"><i></i></div>
+        </div>
+        <input type="range" class="paudio__vol" id="pAudioVol" min="0" max="100" value="70" title="Volume">
+      </div>
+      <audio id="pAudioEl"></audio>
+    </div>
+    <div class="pdiscord hidden" id="pDiscord"></div>
+    <div class="pviews" id="pViews"></div>
+    <div class="pactions">
+      <button class="btn btn--ghost btn--sm" id="pShare">Partager</button>
+      <button class="btn btn--ghost btn--sm" id="pFreeViews">+1 vue gratuite</button>
+      <a class="btn btn--ghost btn--sm" id="pEdit" href="dashboard.html">Modifier ma page</a>
+    </div>
+  </section>
+</main>
+
+<footer class="pfoot">
+  Propulsé par <b>guns.lol</b> — démo statique ·
+  <a href="home.html">Accueil</a> · <a href="dashboard.html">Tableau de bord</a> ·
+  <a href="pricing.html">Tarifs</a> · <a href="leaderboard.html">Classement</a>
+</footer>
+
+<div id="modal-root"></div>
+<div id="toasts"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/store.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

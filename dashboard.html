@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tableau de bord · guns.lol</title>
+<link rel="stylesheet" href="css/guns.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23a855f7' d='M12 2 3 12l9 10 9-10z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="navwrap">
+  <div class="navpill">
+    <a class="brand" href="home.html"><span id="logo"></span> guns.lol</a>
+    <nav class="navlinks" id="navlinks">
+      <a href="home.html">Accueil</a>
+      <a href="index.html" id="myPage">Ma page</a>
+      <a href="leaderboard.html">Classement</a>
+      <a href="pricing.html">Tarifs</a>
+      <a href="login.html">Connexion</a>
+      <a class="btn btn--primary btn--sm" href="dashboard.html">Tableau de bord</a>
+    </nav>
+    <button class="iconbtn nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="dash">
+    <aside class="side" id="side">
+      <div class="side__title">Compte</div>
+      <div class="side__item is-active" data-tab="account">Compte</div>
+      <div class="side__item" data-tab="customize">Personnaliser</div>
+      <div class="side__item" data-tab="links">Liens</div>
+      <div class="side__sep"></div>
+      <div class="side__title">Plus</div>
+      <div class="side__item" data-tab="premium">Premium</div>
+      <div class="side__item" data-tab="files">Image host</div>
+      <div class="side__sep"></div>
+      <a class="side__item" href="index.html" id="sideMyPage">Voir ma page</a>
+    </aside>
+
+    <section class="dash__main" id="main"></section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <div class="footer__brand"><span id="logo2"></span> guns.lol</div>
+      <p style="color:var(--muted);font-size:13px;max-width:320px">Démo statique : toutes les données sont stockées dans votre navigateur.</p>
+    </div>
+    <div><h4>Général</h4><a href="home.html">Accueil</a><a href="pricing.html">Tarifs</a><a href="leaderboard.html">Classement</a></div>
+    <div><h4>Ressources</h4><a href="dashboard.html">Tableau de bord</a><a href="compare.html">Comparer</a><a href="index.html">Ma page</a></div>
+    <div><h4>Contact</h4><a href="#">Discord</a><a href="#">Centre d’aide</a></div>
+  </div>
+</footer>
+
+<div id="modal-root"></div>
+<div id="toasts"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/store.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
